@@ -4,205 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/all.js"></script>
+    <title>RWD最終作業</title>
 </head>
 <body>
     <div class="wrap">
         <div class="header">
-            <ul class="topbar">
-                <li class="facebook">
-                    <a href="https://zh-tw.facebook.com/" target="_blank">
-                        <img src="img/facebookIcon.png" alt="#">
-                        <h3>粉絲團</h3>
-                    </a>
-                </li>
-                <li class="twitter">
-                    <a href="https://twitter.com/?lang=zh-Hant" target="_blank">
-                        <img src="img/twitterIcon.png" alt="#">
-                        <h3>追隨我們</h3>
-                    </a>
-                </li>
-            </ul>
-            <div class="menu">
-                <h1><a href="#">logo</a></h1>
+            <div class="topbar">
+                <h1><a href="#">六角西餐廳logo</a></h1>
+                <ul class="menu">
+                    <li><a href="#">特色</a></li>
+                    <li><a href="#">主廚</a></li>
+                    <li><a href="#">地圖</a></li>
+                </ul>
+                <a href="#" class="showmenu">menu</a>
+            </div>
+            <div class="slogan">
+                <h2>咬一口就無法忘懷的漢堡</h2>
+                <p>七夕絕對無法錯過的好滋味</p>
+                <p>六角大漢堡</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tips">
+                <h3>客人總是在詢問</h3>
+                <div class="dividLine">
+                    <span>123</span>
+                    <span>456</span>
+                </div>
+                <h3>這麼好吃的秘訣是什麼</h3>
                 <ul>
-                    <li><a href="#">首頁</a></li>
                     <li>
-                        <a href="#" class="dropdown">產品介紹</a>
-                        <ul class="dropdown-open">
-                            <li><a href="#">Html</a></li>
-                            <li><a href="#">RWD</a></li>
-                            <li><a href="#">jQuery</a></li>
-                        </ul>
+                        <img src="img/feature_1.png" alt="#">
+                        <h4>台灣本土蔬菜</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias accusantium quasi, cumque laudantium tempore eveniet sunt soluta minima doloribus fuga autem unde ea excepturi assumenda porro id. Nam, itaque?</p>
                     </li>
                     <li>
-                        <a href="#" class="dropdown">聯絡我們</a>
-                        <ul class="dropdown-open">
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">phone</a></li>
-                        </ul>
+                        <img src="img/feature_2.png" alt="#">
+                        <h4>專業米其林廚師</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias accusantium quasi, cumque laudantium tempore eveniet sunt soluta minima doloribus fuga autem unde ea excepturi assumenda porro id. Nam, itaque?</p>
+                    </li>
+                    <li>
+                        <img src="img/feature_3.png" alt="#">
+                        <h4>對於專業不能退讓</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias accusantium quasi, cumque laudantium tempore eveniet sunt soluta minima doloribus fuga autem unde ea excepturi assumenda porro id. Nam, itaque?</p>
                     </li>
                 </ul>
             </div>
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="banner banner1">
-                        <h3>六角學院
-                            <br>
-                            讓您奠定良好的前端基礎
-                        </h3>
-                    </div>
+            <div class="chefToday">
+                <div class="chefImg">
+                    <img src="img/main_chef_brown.png" alt="#">
                 </div>
-                <div class="swiper-slide">
-                    <div class="banner banner2">
-                        <h3>六角學院
-                            <br>
-                            讓您奠定良好的前端基礎
-                        </h3>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="banner banner3">
-                        <h3>六角學院
-                            <br>
-                            讓您奠定良好的前端基礎
-                        </h3>
-                    </div>
+                <div class="chefIntro">
+                    <h3>今日主廚:帕金森、梅在帕</h3>
+                    <p>Tody Chef:Plum in Shock</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ipsa illum aut ea dicta sequi necessitatibus facilis sint rem culpa. Ratione ullam doloremque earum nostrum saepe est quasi rem excepturi, doloribus ex similique alias corrupti? Eligendi id modi nam placeat rem officiis reiciendis? Id consequatur quod nisi quam veritatis adipisci.</p>
                 </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-  
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div class="content">
-            <ul class="course">
-                <li>
-                    <a href="img/html-l.png" data-lightbox="pic-1">
-                        <img src="img/html.png" alt="#">
-                    </a>
-                    <h3>Html5 基礎教學</h3>
-                    <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
-                </li>
-                <li class="RWD">
-                    <a href="img/rwd-l.png" data-lightbox="pic-1" >
-                        <img src="img/rwd.png" alt="#">
-                    </a>
-                    <h3>響應式網站設計</h3>
-                    <p>響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
-                </li>
-                <li class="jq">
-                    <a href="img/jQuery-l.png" data-lightbox="pic-1">
-                        <img src="img/jQuery.png" alt="#">
-                    </a>
-                    <h3>jQuery 實戰教學</h3>
-                    <ul>
-                        <li>瞭解變數的使用方法</li>
-                        <li>學習並操作DOM</li>
-                        <li>學習基本數學運算方法</li>
-                        <li>套件的操作及運用</li>
-                    </ul>
-                </li>
-            </ul>
-            <h4>線上及實體課程的差異</h4>
-            <table>
-                <tr>
-                    <th>項目</th>
-                    <th>Hex School線上課程</th>
-                    <th>一般線上課程</th>
-                    <th>實體課程</th>
-                </tr>
-                <tr>
-                    <td>費用</td>
-                    <td><span>較低</span></td>
-                    <td><span>較低</span></td>
-                    <td>較高</td>
-                </tr>
-                <tr>
-                    <td>學習效果</td>
-                    <td>一般</td>
-                    <td><span>較低</span></td>
-                    <td><span>很好</span></td>
-                </tr>
-                <tr>
-                    <td>Code review</td>
-                    <td><span>有</span></td>
-                    <td>無</td>
-                    <td>不一定</td>
-                </tr>
-                <tr>
-                    <td>課程更新速度</td>
-                    <td><span>普通</span></td>
-                    <td><span>普通</span></td>
-                    <td>較慢</td>
-                </tr>
-                <tr>
-                    <td>多次複習</td>
-                    <td><span>可</span></td>
-                    <td>可</td>
-                    <td>不可</td>
-                </tr>
-                <tr>
-                    <td>字幕</td>
-                    <td><span>有</span></td>
-                    <td>不一定</td>
-                    <td>板書</td>
-                </tr>
-            </table>
-            <form action="index.html">
-                <h5>對我們課程有興趣嗎?
-                    <br>
-                    歡迎留下您的資料
-                </h5>
-                <div class="form">
-                    <textarea name="information" id="information" class="information" cols="60" rows="15"></textarea>
-                    <div class="formText">
-                        <label for="name">姓名</label>
-                        <br>
-                        <input type="text" id="name" name="name" class="name">
-                        <br>
-                        <label for="phone">電話</label>
-                        <br>
-                        <input type="text" id="phone" name="phone" class="phone">
-                        <br>
-                        <label for="mail">信箱</label>
-                        <br>
-                        <input type="text" id="mail" name="mail" class="mail">
-                        <br>
-                        <input type="submit" value="送出" id="submit" class="submit">
+            <div class="opinions">
+                <h3>聽聽別人的感想</h3>
+                <ul>
+                    <li>
+                        <img src="img/avatar_1.png" alt="#">
+                        <div class="clientSays">
+                            <h4>高雄一口吃</h4>
+                            <p>自從吃了這家餐廳以後，我口水連續留了一個多月都沒停，下次不要再被我遇到，不然我一錠連他們桌子都啃下去。</p>
+                            <span>--產品經理</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/avatar_2.png" alt="#">
+                        <div class="clientSays">
+                            <h4>廟口小霸王</h4>
+                            <p>自從吃了這家餐廳以後，我口水連續留了一個多月都沒停，下次不要再被我遇到，不然我一錠連他們桌子都啃下去。</p>
+                            <span>--金身道士</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/avatar_3.png" alt="#">
+                        <div class="clientSays">
+                            <h4>春天也來了</h4>
+                            <p>自從吃了這家餐廳以後，我口水連續留了一個多月都沒停，下次不要再被我遇到，不然我一錠連他們桌子都啃下去。</p>
+                            <span>--美麗萬分</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="reserve">
+                <h3>我們的位置不太夠坐</h3>
+                <h3>要不要先訂位呢?</h3>
+                <div class="reserveInfo">
+                    <div class="reserveImg">
+                        <img src="img/Map.png" alt="#">
                     </div>
+                    <form action="index.html">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" class="name">
+                        <label for="phone">電話</label>
+                        <input type="tel" id='phone' name="phone" class="phone">
+                        <label for="mail">信箱</label>
+                        <input type="email" id="mail" name="mail" class="mail">
+                        <label for="people">人數</label>
+                        <input type="number" id="people" name="people" class="people">
+                        <h4>是否需要素食</h4>
+                        <input type="radio" name="yesorno" value="yesorno">是<input type="radio" name="yesorno" value="yesorno">否
+                        <div class="submitBtn">
+                            <input type="button" value="取消" id="cancel" class="cancel">
+                            <input type="submit" value="送出" id="submit" class="submit">
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
         <div class="footer">
-            <h2><a href="#">logo2</a></h2>
-            <ul>
-                <li>
-                    <p>聯絡我們:<span>hexschool@gmail.com</span></p>
-                </li>
-                <li>
-                    <p>電話:<span>0999123456</span></p>
-                </li>
-            </ul>
+            <div class="info">
+                <div class="about-us">
+                    <h3>關於 六角西餐廳</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illo doloremque quisquam excepturi? Dolor fugiat corporis possimus repellendus eum maiores.</p>
+                </div>
+                <div class="contact-us">
+                    <h3>聯絡方式</h3>
+                    <ul>
+                        <li>
+                            <p>高雄市中正五路到底</p>
+                        </li>
+                        <li>
+                            <p>+886 886 886</p>
+                        </li>
+                        <li>
+                            <p>service@hexschool.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icons">
+                <h2>六角西餐廳</h2>
+                <ul>
+                    <li><a href="#"><img src="img/googleicon.png" alt="#"></a></li>
+                    <li><a href="#"><img src="img/twittericon.png" alt="#"></a></li>
+                    <li><a href="#"><img src="img/fbicon.png" alt="#"></a></li>
+                </ul>
+
+            </div>
         </div>
-        <div class="backtotop">
-            <a href="#">Top</a>
-        </div>
-    </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/all.js"></script>
+    </div>    
 </body>
 </html>
