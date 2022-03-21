@@ -585,3 +585,31 @@ img{
      }
 
 }
+@media (max-width:500px){
+    .slogan{
+        width: 60%;
+    }
+    .slogan h2{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .slogan p{
+        margin-bottom: 3px;
+        font-size: 16px;
+        color: greenyellow;
+    }
+}
+@media (max-width:300px){
+    .slogan{
+        width: 70%;
+    }
+    .slogan h2{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .slogan p{
+        margin-bottom: 3px;
+        font-size: 16px;
+        color: greenyellow;
+    }
+}
