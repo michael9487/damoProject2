@@ -56,27 +56,50 @@ img{
 .wrap{
     max-width: 1000px;
     margin: 0 auto;
-    border: 1px solid;
 }
 .header{
-    background: url(../img/header_desktop.png) no-repeat center center;
-    max-width: 1049px;
-    height: 420px;
+    position: relative;
+    max-width: 1000px;
     margin: 0 auto;
+}
+.banner,.banner2,.banner3,.banner4{
+    display: block;
+    background: url(../img/header_desktop.png) center center no-repeat;
+    max-width: 100%;
+    height: 420px;
+    z-index: 40;
+}
+.banner2{
+    background: url(../img/ham1.png) center center no-repeat;
+}
+.banner3{
+    background: url(../img/ham2.png) center center no-repeat;
+}
+.banner4{
+    background: url(../img/ham3.png) center center no-repeat;
+}
+/* swiper輪播 */
+.swiper {
+    max-width: 100%;
+    height: auto;
 }
 .topbar{
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    position: absolute;
     background: black;
-    opacity: 0.8;
     padding: 20px;
+    z-index: 52;
+    opacity: 0.8;
 }
 .topbar h1 a{
-    background: url(../img/logo_w\(null\).svg) no-repeat ;
+    background: url(../img/howbaoLogo.png) no-repeat center ;
     display: block;
     width: 120px;
     height: 24px;
     text-indent: 101%;
+    color: white;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -98,13 +121,15 @@ img{
     color:white;
     text-align: center;
     width: 50%;
-    position: relative;
-    left: 25%;
-    top: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     padding:20px;
     background: #130400;
     opacity: 0.7;
     white-space: nowrap;
+    z-index: 55;
 }
 .slogan h2{
     font-size: 30px;
@@ -112,6 +137,8 @@ img{
 }
 .slogan p{
     margin-bottom: 3px;
+    font-size: 25px;
+    color: greenyellow;
 }
 .tips{
     padding:20px;
@@ -150,6 +177,10 @@ img{
 .tips li img{
     border-radius:50%;
     margin-bottom: 20px;
+}
+.tips li img:hover{
+    border: 3px solid red;
+    box-shadow:5px 5px 10px gray ;
 }
 .tips li h4{
     font-size: 20px;
@@ -344,7 +375,37 @@ img{
 .menu-show .menu{
     max-height: 500px;
 }
+.backtotop a{
+	position: fixed;
+	border:1px solid blue;
+	bottom: 0;
+	right:0;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+}
+.backtotop a:hover{
+	background: blue;
+	color:white;
+}
 @media (max-width:768px) {
+    .slogan{
+        color:white;
+        text-align: center;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        padding:10px;
+        background: #130400;
+        opacity: 0.7;
+        white-space: nowrap;
+        z-index: 55;
+    }
     .slogan h2{
         font-size: 20px;
     }
@@ -386,13 +447,29 @@ img{
 }
 @media (max-width:600px) {
     .header{
-        background: url(../img/header_mobile.png) center center no-repeat;
-        max-width: 600px;
+        border: 1px solid;
     }
-    .slogan{
+    .banner{
+        background: url(../img/header_mobile.png);
+    }
+    .banner2{
+        background: url(../img/ham1Mobile.png);
+    }
+    .banner3{
+        background: url(../img/ham2Mobile.png);
+    }
+    .banner4{
+        background: url(../img/ham3Mobile.png);
+    }
+    .topbar{
         width: 100%;
-        left: 0;
-        top: 40%;
+        justify-content: space-between;
+        position: absolute;
+        background: black;
+        padding: 20px;
+        height: 70px;
+        z-index: 52;
+        opacity: 0.8;
     }
     .tips ul{
         flex-direction: column;
@@ -486,7 +563,6 @@ img{
     }
     .menu li{
        text-align: center;
-       
     }
     .menu a{
         font-size: 20px;
@@ -499,7 +575,9 @@ img{
         color:green;
         text-decoration: none;
         border: 1px solid;
-        padding:10px;
+        line-height: 20px;
+        padding: 10px;
+        height: 40px;
      }
      .showmenu:hover{
          background: blue;

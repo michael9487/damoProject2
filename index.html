@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/all.js"></script>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>好堡西餐廳</title>
 </head>
 <body>
@@ -15,20 +15,59 @@
             <div class="topbar">
                 <h1><a href="#">六角西餐廳logo</a></h1>
                 <ul class="menu">
-                    <li><a href="#">特色</a></li>
-                    <li><a href="#">主廚</a></li>
-                    <li><a href="#">地圖</a></li>
+                    <li><a href="#" class="scrolltoTips">特色</a></li>
+                    <li><a href="#" class="scrolltoChef">主廚</a></li>
+                    <li><a href="#" class="scrolltoReserve">地圖</a></li>
                 </ul>
                 <a href="#" class="showmenu">menu</a>
             </div>
-            <div class="slogan">
-                <h2>咬一口就無法忘懷的漢堡</h2>
-                <p>七夕絕對無法錯過的好滋味</p>
-                <p>六角大漢堡</p>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="banner">
+                        </div>
+                        <div class="slogan">
+                            <h2>咬一口就無法忘懷的漢堡</h2>
+                            <p>好堡大漢堡</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner2">
+                        </div>
+                        <div class="slogan">
+                            <h2>咬一口就無法忘懷的漢堡</h2>
+                            <p>美式漢堡</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner3">
+                        </div>
+                        <div class="slogan">
+                            <h2>咬一口就無法忘懷的漢堡</h2>
+                            <p>牛肉漢堡</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner4">
+                        </div>
+                        <div class="slogan">
+                            <h2>咬一口就無法忘懷的漢堡</h2>
+                            <p>米漢堡</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
         <div class="content">
-            <div class="tips">
+            <div class="tips" id="scrolltoTips">
                 <h3>客人總是在詢問</h3>
                 <div class="dividLine">
                     <span>123</span>
@@ -37,23 +76,29 @@
                 <h3>這麼好吃的秘訣是什麼</h3>
                 <ul>
                     <li>
-                        <img src="img/feature_1.png" alt="#">
+                        <a href="img/lightFeature1.png" data-lightbox="lightboxImg">
+                            <img src="img/feature_1.png" alt="#">
+                        </a>
                         <h4>台灣本土蔬菜</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias accusantium quasi, cumque laudantium tempore eveniet sunt soluta minima doloribus fuga autem unde ea excepturi assumenda porro id. Nam, itaque?</p>
                     </li>
                     <li>
-                        <img src="img/feature_2.png" alt="#">
+                        <a href="img/lightFeature2.png" data-lightbox="lightboxImg">
+                            <img src="img/feature_2.png" alt="#">
+                        </a>
                         <h4>專業米其林廚師</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias accusantium quasi, cumque laudantium tempore eveniet sunt soluta minima doloribus fuga autem unde ea excepturi assumenda porro id. Nam, itaque?</p>
                     </li>
                     <li>
-                        <img src="img/feature_3.png" alt="#">
+                        <a href="img/lightFeature3.png" data-lightbox="lightboxImg">
+                            <img src="img/feature_3.png" alt="#">
+                        </a>
                         <h4>對於專業不能退讓</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias accusantium quasi, cumque laudantium tempore eveniet sunt soluta minima doloribus fuga autem unde ea excepturi assumenda porro id. Nam, itaque?</p>
                     </li>
                 </ul>
             </div>
-            <div class="chefToday">
+            <div class="chefToday" id="scrolltoChef">
                 <div class="chefImg">
                     <img src="img/main_chef_brown.png" alt="#">
                 </div>
@@ -122,7 +167,7 @@
         <div class="footer">
             <div class="info">
                 <div class="about-us">
-                    <h3>關於 六角西餐廳</h3>
+                    <h3>關於 好堡西餐廳</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illo doloremque quisquam excepturi? Dolor fugiat corporis possimus repellendus eum maiores.</p>
                 </div>
                 <div class="contact-us">
@@ -141,15 +186,22 @@
                 </div>
             </div>
             <div class="icons">
-                <h2>六角西餐廳</h2>
+                <h2>好堡西餐廳</h2>
                 <ul>
-                    <li><a href="#"><img src="img/googleicon.png" alt="#"></a></li>
-                    <li><a href="#"><img src="img/twittericon.png" alt="#"></a></li>
-                    <li><a href="#"><img src="img/fbicon.png" alt="#"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/googleicon.png" alt="#"></a></li>
+                    <li><a href="https://twitter.com/?lang=zh-tw" target="_blank"><img src="img/twittericon.png" alt="#"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="img/fbicon.png" alt="#"></a></li>
                 </ul>
 
             </div>
         </div>
-    </div>    
+        <div class="backtotop">
+            <a href="#">Top</a>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>    
 </body>
 </html>
