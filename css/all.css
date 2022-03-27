@@ -375,6 +375,9 @@ img{
 .menu-show .menu{
     max-height: 500px;
 }
+.backtotop{
+    display: none;
+}
 .backtotop a{
 	position: fixed;
 	border:1px solid blue;

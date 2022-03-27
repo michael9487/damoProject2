@@ -28,7 +28,16 @@ $(document).ready(function () {
 });
 
 
+
 //top回最上方效果
+function showBtnCondition() {
+    if ($(this).scrollTop() > 600) {
+      $('.backtotop').fadeIn();
+    } else {
+         $('.backtotop').fadeOut();
+    }
+}
+ $(window).scroll(showBtnCondition);
 $('.backtotop a').click(function (e) { 
     e.preventDefault();
     $('html,body').animate({
