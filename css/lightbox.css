@@ -153,7 +153,7 @@ body.lb-disable-scrolling {
 
 .lb-data {
   padding: 0 4px;
-  color: #ccc;
+  color: black !important;
 }
 
 .lb-data .lb-details {
@@ -167,6 +167,7 @@ body.lb-disable-scrolling {
   font-size: 13px;
   font-weight: bold;
   line-height: 1em;
+  color: black !important;
 }
 
 .lb-data .lb-caption a {
